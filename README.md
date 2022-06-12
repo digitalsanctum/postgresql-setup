@@ -40,6 +40,13 @@ An assumption that the Postgres authentication system makes by default is that f
 sudo -u postgres createdb shane
 ```
 
+### set a password
+
+```
+sudo -u user_name psql db_name
+ALTER USER user_name WITH PASSWORD 'new_password';
+```
+
 
 ## config
 
