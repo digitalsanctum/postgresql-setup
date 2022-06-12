@@ -1,4 +1,4 @@
-# postgresql-setup
+# postgresql setup
 
 The following are instructions for setting up a new PostgreSQL database on Ubuntu. These instructions assume that the db host does not have a public route so be careful!
 
