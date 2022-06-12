@@ -1,6 +1,6 @@
 # postgresql-setup
 
-The following are instructions for setting up a new PostgreSQL database.
+The following are instructions for setting up a new PostgreSQL database. These instructions assume that the db host does not have a public route so be careful!
 
 ## install
 
