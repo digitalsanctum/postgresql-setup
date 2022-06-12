@@ -54,5 +54,19 @@ with
 listen_addresses = '*'
 ```
 
+Second, update `/etc/postgresql/12/main/pg_hba.conf` and add the following lines:
+
+```
+host    all             all              0.0.0.0/0                       md5
+host    all             all              ::/0                            md5
+```
+
+Now, restart postgresql server:
+
+```
+sudo service postgresql restart
+```
+
+
 
 
