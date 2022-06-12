@@ -19,5 +19,19 @@ sudo apt-get update
 sudo apt install postgresql postgresql-contrib -y
 ```
 
+## create role
+
+```
+sudo -u postgres psql
+createuser --interactive
+```
+
+output:
+```
+Enter name of role to add: shane
+Shall the new role be a superuser? (y/n) y
+```
+
+
 ## config
 
