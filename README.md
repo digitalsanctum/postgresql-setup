@@ -19,6 +19,9 @@ sudo apt-get update
 sudo apt install postgresql postgresql-contrib -y
 ```
 
+NOTE: To install a newer vesrion (>12), following instructions here: https://wiki.postgresql.org/wiki/Apt
+
+
 ## create role
 
 ```
