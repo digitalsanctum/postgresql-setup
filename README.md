@@ -32,6 +32,27 @@ Enter name of role to add: shane
 Shall the new role be a superuser? (y/n) y
 ```
 
+An assumption that the Postgres authentication system makes by default is that for any role used to log in, that role will have a database with the same name which it can access.
+```
+sudo -u postgres createdb shane
+```
+
 
 ## config
+
+Two changes are necessary in order to allow connections to databases aside from localhost.
+
+First, update `/etc/postgresql/12/main/postgresql.conf` and replace the line:
+
+```
+listen_addresses = 'localhost'
+```
+
+with
+
+```
+listen_addresses = '*'
+```
+
+
 
